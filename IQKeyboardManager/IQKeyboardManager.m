@@ -1861,6 +1861,12 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
                         {
                             toolbar.tintColor = [UIColor blackColor];
                         }
+                        if (_toolbarBackgroundImage) {
+                            [toolbar setBackgroundImage:_toolbarBackgroundImage forToolbarPosition:UIBarPositionAny           barMetrics:UIBarMetricsDefault];
+                            [toolbar setBackgroundImage:_toolbarBackgroundImage forToolbarPosition:UIBarPositionBottom        barMetrics:UIBarMetricsDefault];
+                            [toolbar setBackgroundImage:_toolbarBackgroundImage forToolbarPosition:UIBarPositionTop           barMetrics:UIBarMetricsDefault];
+                            [toolbar setBackgroundImage:_toolbarBackgroundImage forToolbarPosition:UIBarPositionTopAttached   barMetrics:UIBarMetricsDefault];
+                        }
                     }
                         break;
                 }

@@ -121,6 +121,10 @@ extern NSInteger const kIQPreviousNextButtonToolbarTag;
  This is used for toolbar.tintColor when textfield.keyboardAppearance is UIKeyboardAppearanceDefault. If shouldToolbarUsesTextFieldTintColor is YES then this property is ignored. Default is nil and uses black color.
  */
 @property(nullable, nonatomic, strong) UIColor *toolbarTintColor;
+/**
+ This is used for toolbar.backgroundImage
+ */
+@property (nullable, nonatomic, strong) UIImage *toolbarBackgroundImage;
 
 /**
  IQPreviousNextDisplayModeDefault:      Show NextPrevious when there are more than 1 textField otherwise hide.
